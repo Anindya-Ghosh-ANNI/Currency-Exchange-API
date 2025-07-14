@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Currency Convertor</h1>
+        </header>
+
+        <main>
+            <!-- Input -->
+            <div id="amount-section">
+                <div id="amount-from">
+                    <h3>Enter Amount</h2>
+                    <input type="text" id="input-from" value="1">
+                </div>
+                <div id="amount-to">
+                    <h3>Converted Amount</h2>
+                    <input type="text" id="input-to" value="Null" readonly>
+                </div>
+            </div>
+            
+            <!-- Country -->
+            <div id="country-section">
+                <div id="from" class="country">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="" class="img-country">
+                    <select name="from" id="from-select" class="drop-down">     </select>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div id="to" class="country">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="" class="img-country">
+                    <select name="to" id="to-select" class="drop-down" value="">     </select>
+                </div>
+            </div>
+
+            <!-- Relation -->
+            <div id="info-section">
+                <div id="exchange-relation">
+                    <p>Exchange Relation:</p>
+                    <p id="exchange-relation-box" class="info-box">Null</p>
+                </div>
+                <div id="date">
+                    <p>Last Updated Date:</p>
+                    <p id="" class="info-box">Null</p>
+                </div>
+                
+            </div>
+            <!-- Button -->
+            <div id="exchange-btn">
+                <button>Exchange Rate</button>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
